@@ -1,0 +1,29 @@
+[package]
+name = "hashlib"
+version = "0.1.0"
+authors = ["Boyu Yang <yangby@cryptape.com>"]
+edition = "2018"
+
+[dependencies]
+prelude = { package = "hashlib-prelude", version = "~0.1.0", path = "../prelude" }
+nfhash = { package = "numext-fixed-hash", version = "~0.1.2" }
+md5 = { package = "md5", version = "~0.6", optional = true }
+sha1 = { package = "sha1", version = "~0.6", optional = true }
+sha2 = { package = "sha2", version = "~0.8", optional = true }
+keccak = { package = "tiny-keccak", version = "~1.4", optional = true }
+blake2b = { package = "blake2b_simd", version = "~0.4", optional = true }
+
+[features]
+default = ["support-all"]
+support-all = [
+    "support-md5",
+    "support-sha1",
+    "support-sha2",
+    "support-keccak",
+    "support-blake2b",
+]
+support-md5 = ["md5"]
+support-sha1 = ["sha1"]
+support-sha2 = ["sha2"]
+support-keccak = ["keccak"]
+support-blake2b = ["blake2b"]

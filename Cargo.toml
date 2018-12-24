@@ -1,7 +1,5 @@
-[package]
-name = "hashlib"
-version = "0.1.0"
-authors = ["Boyu Yang <yangby@cryptape.com>"]
-edition = "2018"
-
-[dependencies]
+[workspace]
+members = [
+    "prelude",
+    "algorithms",
+]

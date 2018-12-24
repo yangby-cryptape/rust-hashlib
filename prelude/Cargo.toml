@@ -1,0 +1,11 @@
+[package]
+name = "hashlib-prelude"
+version = "0.1.0"
+authors = ["Boyu Yang <yangby@cryptape.com>"]
+edition = "2018"
+
+[dependencies]
+
+[features]
+default = []
+impl-as-ref = []
