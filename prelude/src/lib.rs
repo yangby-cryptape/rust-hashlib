@@ -6,7 +6,7 @@
 // option. This file may not be copied, modified, or distributed
 // except according to those terms.
 
-//! A abstraction layer for wrapping implementations of various hash algorithms.
+//! An abstraction layer for wrapping implementations of various hash algorithms.
 
 mod algorithm;
 mod hashable;

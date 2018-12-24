@@ -3,9 +3,18 @@ name = "hashlib-prelude"
 version = "0.1.0"
 authors = ["Boyu Yang <yangby@cryptape.com>"]
 edition = "2018"
+description = "An abstraction layer for wrapping implementations of various hash algorithms."
+homepage = "https://yangby-cryptape.github.io/rust-hashlib/"
+repository = "https://github.com/yangby-cryptape/rust-hashlib"
+keywords = ["hash"]
+categories = ["algorithms"]
+license = "Apache-2.0 OR MIT"
 
 [dependencies]
 
 [features]
 default = []
 impl-as-ref = []
+
+[badges]
+travis-ci = { repository = "yangby-cryptape/rust-hashlib" }
