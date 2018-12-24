@@ -48,7 +48,9 @@ pub trait HashAlgoKernel {
 pub trait HashAlgo: ::std::default::Default {
     type Kernel: HashAlgoKernel;
 
-    fn setup() -> <<Self as HashAlgo>::Kernel as HashAlgoKernel>::Option;
+    fn setup() -> <<Self as HashAlgo>::Kernel as HashAlgoKernel>::Option {
+        ::std::default::Default::default()
+    }
 
     /// Input the complete bytes to compute the digest.
     fn hash(
