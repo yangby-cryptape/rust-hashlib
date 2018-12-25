@@ -8,6 +8,7 @@
 
 use crate::{HashAlgo, HashAlgoKernel};
 
+/// A trait for adding a `hash` method to struct or enum.
 pub trait Hashable<Algo>
 where
     Algo: HashAlgo,
